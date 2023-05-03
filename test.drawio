@@ -1,0 +1,121 @@
+<mxfile host="65bd71144e">
+    <diagram id="IdUBzEOehrHBdc5XI0DA" name="第 1 页">
+        <mxGraphModel dx="1795" dy="2227" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="票池" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="250" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="11" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="退的票可以给票池重新计算" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="36" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2546" y="2" relative="1" as="geometry">
+                        <mxPoint y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="买票信息数据库" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="50" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="request" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" parent="1" source="22" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="写入" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="24" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="155" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;" parent="1" source="29" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="买票服务器同步方式" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="827" width="370" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="服务器3" style="rounded=0;whiteSpace=wrap;html=1;" parent="17" vertex="1">
+                    <mxGeometry x="30" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="服务器2" style="rounded=0;whiteSpace=wrap;html=1;" parent="17" vertex="1">
+                    <mxGeometry x="30" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="服务器1" style="rounded=0;whiteSpace=wrap;html=1;" parent="17" vertex="1">
+                    <mxGeometry x="30" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="17" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="140" as="sourcePoint"/>
+                        <mxPoint x="250" y="130.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="写入也为lazy操作&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="45" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" parent="1" source="17" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="327.5000000000001" as="sourcePoint"/>
+                        <mxPoint x="250" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="获取票池为lazy操作" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="365" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="用户信息" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="-140" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" parent="1" source="17" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="80" as="sourcePoint"/>
+                        <mxPoint x="250" y="-15" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="这个操作可以每一秒获取一次，将一秒内所有的用户数据一起请求下来。然后分批发放&lt;br&gt;&lt;br&gt;1. 接口1，往lazy操作list添加这个用户&amp;nbsp;&lt;br&gt;2. 接口2，每隔两三秒，获取用户信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="278" y="-190" width="270" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="票池计算" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="400" width="460" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="站站建模&lt;br&gt;1.比如跨站票，等于买了多个站站相连的票" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="30" vertex="1">
+                    <mxGeometry x="18" y="50" width="292" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="接口1的操作，对于服务器来说往list里面加东西，[user1 ,user2,user3]&lt;br&gt;服务器会把list的结果，每隔一两秒请求一次服务器。&lt;br&gt;这个时候接口2就可以获取到服务器的用户数据" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="-180" width="440" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="用户信息" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="-440" width="360" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="map&amp;lt;string,string&amp;gt;&amp;nbsp; &amp;nbsp;身份证，信息映射。&amp;nbsp;&lt;br&gt;1. 数据库，身份证编号，分表&lt;br&gt;2. redis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="32" vertex="1">
+                    <mxGeometry x="18" y="40" width="292" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="49" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="45">
+                    <mxGeometry x="0.2378" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="买票服务器" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="420" width="460" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="1. 按照起点地区分，比如上海，到武汉，北京，四川，" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="41" vertex="1">
+                    <mxGeometry x="18" y="50" width="392" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="存票池，拉票的时候不与其它服务器发生冲突" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="41" vertex="1">
+                    <mxGeometry x="58" y="125" width="312" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="处理退票问题" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="41">
+                    <mxGeometry x="58" y="190" width="312" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="41" target="49">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1040" y="660" as="sourcePoint"/>
+                        <mxPoint x="556" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="json&lt;br&gt;{&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;起点，终点1，终点2&lt;br&gt;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="501.25" width="140" height="117.5" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
